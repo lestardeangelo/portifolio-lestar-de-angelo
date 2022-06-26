@@ -280,7 +280,7 @@ section .title::after{
 }
 /*  sessão Projetos */
 .skills .title::after{
-    content: "Alguns trablhos";
+    content: "Alguns trabalhos";
     max-width: 150px;
 }
 .skills .skills-content .card {
@@ -310,7 +310,7 @@ section .title::after{
     color: #00804b;
 }
 .skills .skills-content .card:hover a{
-    color: #fff;
+
     margin: 5px;
 }
 .skills .skills-content .card .text{
@@ -426,10 +426,40 @@ section .title::after{
     background: none;
 }
 
+
+.contact .max-width{
+height: 460px;
+}
+
 .contact .rigth{
+    display: flex;
     margin: auto;
-    height: 275px;
+    height: 410px;
     width: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-socials .contact-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.contact .contact-socials .contact-ul li{
+    display: flex;
+    transition: all 0.3s ease;
+}
+.contact .contact-socials .contact-ul li a img{
+    
+}
+.contact .contact-socials .contact-ul li:hover{
+    transform: scale(1.3);
+}
+.contact .contact-socials{
+    width: 400px;
 }
 
 /*  sessão footer  */
@@ -625,7 +655,7 @@ footer span a:hover{
     }
 
     .contact .rigth{
-        height: 220px;
+        height: 375px;
         width: 250px;
     }
 
@@ -681,6 +711,9 @@ footer span a:hover{
         width: 260px;
         height: 240px;
     
+    }
+    .contact .contact-socials {
+        width: 300px;
     }
 }
 
