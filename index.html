@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://lh3.googleusercontent.com/QDxjTVFsnSTkjfUByhorSVd_fE-M18GqWjXcsX0tU20zkjfKw_F2TiKftYim56v9KpOxHNSuGpNFnbr0eTFMU6FI7gkGJBFiSbuRiGWpWcmm1PU13xYue53-QWgZB2yxBg7u9kmTSKzri6GqewobX3DeMA2Ecmn2z2TZqcdl8yCdp3okTtcgEi4y8NGUzCPmvqyT7JcZUtCwKiqhbUDbsZ4bp5vxNP9WRA6IpYYxSx_Pu0qaOIc8LCN_pSDu6rTl13nZ15Pp2w7LvHwxTC9cw1gxaVhTplG5gdJQHRyRBya54vLcYmx5uv7PgAFjZnfGUDDlnSXtryBIAtpoD0NrK6z1xgn96cHB27Qi6f99Kis4Yaldnfnr_Uy-wIYizuhddqRyxykpiBunzinPgS-kDm4BTNceR-G_cWegY52RfaXTaYYTKhkIkr3g_Tj3GlPQDhEns7a6leVoxDhbI-pg3ryjQT8uUVhr30guiE2O4C4A8pGQQ_g-QumGfXoV_9BrTI2KnWtKqXO06nVcC09Y0dUzpuUHkUDafm027np4OM5G6SOoi2MI1s54Vh1338iOiIGPHpMbYijzjs-W-oU8ZL2JeElrbU6iFd-e6n8o0AKDXX93HIeVCAOE_53IHQvcIRSK4l862h5S0v33tjkGykiJ00jNxu3XMu8pyctDvbCfRIRz6sUiHFR62SQvkOnPABSp1hhe33mBXzjrkw7cf0NE34RUGN-KpMWUrHyppu5_3EEqYZr_lW05OyJ2H6uO6AI4li2cKVVpokA4P70LsWxptCkiw54CEHyATw=s319-no?authuser=1" type="image/x-icon">
     <title>Portfólio Lestar de angelo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -206,18 +206,23 @@
             <h2 class="title">Contato</h2>
             <div class="column rigth">
                 <div>
-                <form action="mailto:lestarherminio@gmail.com" method="POST" enctype="text/plain">
+                <form action="https://formsubmit.co/lestarherminio@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://lestardeangelo.github.io/portifolio-lestar-de-angelo/thanks">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Nome" required>
+                            <label for="nome"></label>
+                            <input type="text" name="nome" placeholder="Nome" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <label for="email"></label>
+                            <input type="email" name="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="field">
                         <div class="field">
-                            <input type="text" placeholder="Sobrenome" required>
+                            <label for="mensagem"></label>
+                            <input type="text" name="mensagem" placeholder="Sobrenome" required>
                         </div>
                         <div class="field textarea">
                            <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
@@ -226,7 +231,6 @@
                             <button type="submit">Enviar</button>
                         </div>
                     </div>
-                    
                 </form>
             </div>
             <div class="contact-socials">
