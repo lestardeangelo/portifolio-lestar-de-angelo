@@ -161,12 +161,12 @@ section .title::before{
 }
 section .title::after{
     position: absolute;
-    bottom:-14px;
+    bottom:-12px;
     left: 50%;
     font-size: 20px;
     background: #fff;
     color: #00804b;
-    padding: 5px;
+    padding: 3px;
     transform: translateX(-50%);
 }
 .about, .Tecnologias, .skills, .contact, footer{
@@ -281,7 +281,7 @@ section .title::after{
 /*  sessão Projetos */
 .skills .title::after{
     content: "Alguns trabalhos";
-    max-width: 150px;
+    max-width: 157px;
 }
 .skills .skills-content .card {
     width: calc(33% - 110px);
